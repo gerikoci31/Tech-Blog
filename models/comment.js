@@ -1,10 +1,10 @@
-module.exports = (sequelize, DataTypes) => {
-    const Comment = sequelize.define('Comment', {
-      content: {
-        type: DataTypes.TEXT,
-        allowNull: false
-      }
-    });
-  
-    return Comment;
-  };
+module.exports = (sequelize, Sequelize) => {
+  const Comment = sequelize.define('Comment', {
+    text: {
+      type: Sequelize.TEXT,
+      allowNull: false,
+    },
+  });
+
+  return Comment;
+};

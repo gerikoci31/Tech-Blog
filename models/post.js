@@ -1,14 +1,36 @@
-module.exports = (sequelize, DataTypes) => {
-    const Post = sequelize.define('Post', {
-      title: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      content: {
-        type: DataTypes.TEXT,
-        allowNull: false
-      }
-    });
+
+
+const updatePost = (req, res) => {
   
-    return Post;
-  };
+  res.send('Post updated');
+};
+
+const createPost = (req, res) => {
+  
+  res.send('Post created');
+};
+
+const deletePost = (req, res) => {
+  
+  res.send('Post deleted');
+};
+
+const getDashboard = (req, res) => {
+  
+  res.send('Dashboard');
+};
+
+module.exports = (sequelize, Sequelize) => {
+  const Post = sequelize.define('Post', {
+    title: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    content: {
+      type: Sequelize.TEXT,
+      allowNull: false,
+    },
+  });
+
+  return Post;
+};

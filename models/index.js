@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize(process.env.DB_CONNECTION_STRING || 'postgres://localhost:5432/blog_cms');
+const sequelize = new Sequelize(process.env.DB_CONNECTION_STRING || 'postgres://postgres:Anac0ndA@localhost:5432/techblog_db');
 
 const db = {};
 
@@ -9,7 +9,6 @@ db.sequelize = sequelize;
 db.User = require('./user')(sequelize, Sequelize);
 db.Post = require('./post')(sequelize, Sequelize);
 db.Comment = require('./comment')(sequelize, Sequelize);
-
 
 db.User.hasMany(db.Post);
 db.Post.belongsTo(db.User);

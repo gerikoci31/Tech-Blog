@@ -32,11 +32,11 @@ app.use(session({
   store: sessionStore
 }));
 
-// Routes
+
 const routes = require('./routes');
 app.use(routes);
 
-// Sync database and start server
+
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
@@ -44,3 +44,4 @@ sequelize.sync().then(() => {
 });
 
 require('dotenv').config();
+
