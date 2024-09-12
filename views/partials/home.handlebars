@@ -1,5 +1,14 @@
-{{> header}}
-<main>
-  <h2>Welcome to the Home Page</h2>
-  <p>This is where the content for the home page will go.</p>
+{{>header}}
+<h3>All Posts</h3>
+  <ul>
+    {{#each posts}}
+      <li>
+        <h4>{{this.title}}</h4>
+        <p>{{this.content}}</p>
+        <small>Posted on {{this.date}}</small>
+      </li>
+    {{/each}}
+  </ul>
 </main>
+{{>footer}}
+

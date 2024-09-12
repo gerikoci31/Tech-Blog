@@ -5,9 +5,11 @@
       <li><a href="/">Home</a></li>
       {{#if user}}
         <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="/posts">Posts</a></li>
+        <li><a href="/post">Posts</a></li>
+        
         <li><a href="/logout">Logout</a></li>
       {{else}}
+        
         <li><a href="/login">Login</a></li>
         <li><a href="/signup">Sign Up</a></li>
       {{/if}}
