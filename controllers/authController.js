@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const { User } = require('../models');
 
 exports.getLogin = (req, res) => {
-  res.render('login');
+  res.render('partials/login');
 };
 
 exports.postLogin = async (req, res) => {
@@ -10,7 +10,7 @@ exports.postLogin = async (req, res) => {
 };
 
 exports.getSignup = (req, res) => {
-  res.render('signup');
+  res.render('partials/signup');
 };
 
 exports.postSignup = async (req, res) => {
