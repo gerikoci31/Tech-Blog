@@ -3,14 +3,14 @@
       "username": "postgres",
       "password": null,
       "database": "techblog_db",
-      "host": "127.0.0.1",
+      "host": "localhost",
       "dialect": "postgres"
     },
     "test": {
       "username": "root",
       "password": null,
       "database": "techblog_db",
-      "host": "127.0.0.1",
+      "host": "localhost",
       "dialect": "postgres"
     },
     "production": {
