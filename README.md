@@ -136,3 +136,6 @@ You can use tools like Postman or cURL to test the API endpoints.
 
 ## License
 - This project is licensed under the MIT License.
+
+## Deployed URL on Render
+- https://tech-blog-1-1dzo.onrender.com/
